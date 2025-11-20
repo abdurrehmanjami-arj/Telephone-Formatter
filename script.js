@@ -13,8 +13,9 @@ input.addEventListener("input", (e) => {
 
   if (inputValue.length === 4 && previousValue.length < inputValue.length) {
     firstThreeNumbers = inputValue.substring(0, 3);
-    input.value = `+ (${firstThreeNumbers}) - ${inputValue[inputValue.length - 1]
-      }`;
+    input.value = `+ (${firstThreeNumbers}) - ${
+      inputValue[inputValue.length - 1]
+    }`;
   } else if (
     inputValue.length === 9 &&
     previousValue.length > inputValue.length
